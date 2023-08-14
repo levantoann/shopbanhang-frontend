@@ -18,6 +18,8 @@ const MyOrderPage = () => {
         const res = await OrderService.getOrderByUserId(state?.id, state?.token)
         return res.data
     }
+	const user = useSelector((state) => state.user)
+	
     const queryOrder= useQuery({queryKey: ['orders'], queryFn:fetchMyOrder}, {
         enabled: state?.id && state?.access_token
     })
