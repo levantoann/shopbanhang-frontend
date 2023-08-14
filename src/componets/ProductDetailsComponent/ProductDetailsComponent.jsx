@@ -208,8 +208,9 @@ const ProductDetailsComponent = ({idProduct}) => {
             </div>
         </Col>
         <CommentButtonComponent 
-            dataHref={"https://developers.facebook.com/docs/plugins/comments#configurator"} 
-            width="1800"
+            dataHref={"https://developers.facebook.com/docs/plugins/comments#configurator"
+            } 
+            width="1600"
         />
     </Row>
     </Loading>
