@@ -33,8 +33,8 @@ const MyOrderPage = () => {
 
     const mutation = useMutationHooks(
         (data) => {
-            const {id, token, orderItems} = data
-            const res = OrderService.cancelOrder(id,token,orderItems)
+            const {id, token, orderItems, userId} = data
+            const res = OrderService.cancelOrder(id,token,orderItems,userId)
             return res
         }
     )
